@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* geral */
+header{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 3rem;
+}
+header h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    line-break: 1px;
+}
+.menu ul{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    
+
+}
+.menu ul li a{
+    text-transform: capitalize;
+    font-weight: 1.1rem;
+    font-weight: bold;
+}
+
+/* introdução */
+.introdução{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+
+    max-width: 1300px;
+    padding: 2.5rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.introdução-info h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+.introdução-info h1::before{
+    content: " ";
+    width: 200px;
+    height: 200px;
+    background: url(./assets/detalhe.svg) no-repeat;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+    
+}
+.introdução p{
+    font-size: 1.5rem;
+}
+/* experiêncas */
+.experiencias{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    max-width: 1300px;
+    padding: 40px 20px;
+}
+.experiencias h2{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+
+    color: #c0c0c0;
+}
+.experiencias-texto{
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+.experiencias-texto span{
+    color: black;
+    font-weight: bold;
+}
+.empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.empresa::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829,#67dd0a);
+    position: absolute;
+    top: 20px;
+    left: -5px;
+}
+.empresa-ano {
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    text-align: right;
+    width: 80px;
+    color: #525252;
+    font-size: .875rem;
+}
+.empresa-cargo{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.empresa-habilidades{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.empresa-habilidades li{
+    padding: 8px 16px;
+    background-color: white;
+    max-height: 50%;
+
+    align-self: center;
+}
+/* formação */
+.formação{
+    background-color: rgb(37, 37, 37);
+    max-width: 100vw;
+    max-height: 100%;
+
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.subtitulo-formação{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+
+    color: rgb(0, 0, 0);
+}
+.formação-right{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.formação-info{
+    font-size: 1.5rem;
+    color: #bebebe;
+    width: 80%;
+}
+.formação-info span{
+    color: #f7f7f7;
+    font-weight: bold;
+}
+.formação-cursos{
+    display: flex;
+    gap: 20px;
+    
+}
+.formação-estudo{
+    background-color: rgb(0, 0, 0);
+    padding: 30px 20px;
+    max-height: 100%;
+    border-radius: 4px;
+
+    display: grid;
+    gap: 20px;
+    position: relative;
+
+    box-shadow: 4px 4px 4px 2px;
+    
+}
+.formação-estudo::before{
+    content: '';
+    width: 3px;
+    height: 20px;
+    background: linear-gradient(#b6f829,#67dd0a);
+    position: absolute;
+    top: 40%;
+    left: -5px;
+    
+    
+}
+.formação-estudo .titulo{
+    font-size: 1rem;
+    color: #9e9e9e;
+    font-weight: 500;
+}
+.formação-estudo .info{
+    color: #f7f7f7;
+    font-size: 1.2rem;
+
+    max-width: 80%;
+}
+.formação-estudo .local{
+    color: #525252;
+    font-size: 1.2rem;
+}
+
+
+.cursos-intensivos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cursos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    
+
+}
+.cursos-intensivos h1::before{
+    content: '';
+    max-width: 100%;
+    height: 100%;
+    background: url(https://www.origamid.com/projetos/portfolio/img/cursos.svg) no-repeat;
+    display: block;
+    position: relative;
+    top: 18px;
+    left: -30px;
+}
+.cursos-intensivos h1{
+
+    font-size: 1.1rem;
+    color: #bebebe;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cursos-item{
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    
+}
+.cursos-horas{
+    text-align: end;
+    margin-right: 20px;
+    color: #bebebe;
+
+    font-size: 1.2rem;
+}
+
+/* idiomas */
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.idiomas h1{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #c0c0c0;
+    
+}
+.idiomas h1::before{
+    content: '';
+    max-width: 100%;
+    height: 100%;
+    background: url(https://www.origamid.com/projetos/portfolio/img/idiomas.svg) no-repeat;
+    display: block;
+    position: relative;
+    top: 18px;
+    left: -30px;
+    
+}
+.idiomas p{
+    font-size: 1.2rem;
+    color: #f7f7f7;
+}
+.idiomas span{
+    color: #bebebe;
+}
+/* contato */
+.contato{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+
+    color: #f7f7f7;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px 20px;
+    gap: 40px;
+    position: relative;
+}
+.contato::before{
+    content: " ";
+    width: 200px;
+    height: 200px;
+    background: url(./assets/detalhe.svg) no-repeat;
+    position: absolute;
+    top: -60px;
+    left: 5%;
+}
+.contato .info{
+    align-self: center;
+    font-size: 2rem;
+}
+.contatos{
+
+ 
+}
+.contatos li{
+    display: grid;
+    justify-content: center;
+}
+.contatos li a{
+ text-decoration: none;
+ padding: 30px;
+ 
+ color: #f7f7f7;
+}
+footer p{
+    background-color: rgb(0, 0, 4);
+    color: #f5f5f5;
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 0;
+    
+}
+/* @media */
+@media (max-width: 900px){
+    
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        text-align: center;
+    }
+    .menu ul{
+        justify-content: center;
+        margin-top: 2rem;
+        
+    }
+    .menu ul li a{
+        background-color: #e7e7e7;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+    /* .introdução{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    } */
+    .introdução-info h1::before{
+        display: none;
+    }
+    .introdução img{
+        justify-self: center;
+    }
+    .introdução-info h1{
+        font-size: 2rem;
+    }
+    
+    .experiencias{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .experiencias h2{
+        font-size: 4rem;
+        max-width: 100%;
+        text-align: center;
+
+    }
+    .formação{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .subtitulo-formação{
+        font-size: 4rem;
+        max-width: 100%;
+        text-align: center;
+    }
+    .contato::before{
+        display: none;
+    }
+    .contato{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    footer{
+        display: grid;
+        margin-top: 0;
+    }
+
+}
+
+@media(max-width: 550px){
+    .menu ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu ul li{
+        margin: auto;
+    }
+    .introdução{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .experiencias h2{
+        font-size: 2rem;
+    }
+    .empresa{
+        display: flex;
+        flex-direction: column;
+    }
+    .subtitulo-formação{
+        font-size: 2rem;
+    }
+    .formação-cursos{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/meu.css"> -->
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header" id="header">
         <h1>Lenilson Lira</h1>
         <nav class="menu">
             <ul>
@@ -21,15 +22,14 @@
     <main class="introdução">
         <img src="./assets/Avatar.png" alt="Lenilson Lira logo">
         <div class="introdução-info">
-            <h1>Desenvolvedor Front End & UX/UI Designer</h1>
+            <h1>Desenvolvedor <br> Front End & <br> UX/UI Designer</h1>
             <p>Localizado em Joâo Pessoa - PB 🏖</p>
         </div>
     </main>
-    <section class="experiencias" id="experiencias">
-        <h2>experiências</h2>
+    <section class="container experiencias" id="experiencias" aria-label="experiências">
+        <h2 class="subtitulo">experiências</h2>
         <div>
-            <p class="experiencias-texto">Sigo desenvolvo pequenos projetos como o Bikcraft utilizando apenas <span>HTML, CSS</span> e <span>JavaScript</span>. Para aplicativos web como a r
-                ede social Dogs. Eu trabalhei no <span>UX</span> e <span>UI Design</span> do projeto.</p>
+            <p class="experiencias-texto">Sigo desenvolvendo pequenos projetos como o Bikcraft utilizando apenas <span>HTML, CSS</span> e <span>JavaScript</span>. Para aplicativos web como a rede social Dogs. Eu trabalhei no <span>UX</span> e <span>UI Design</span> do projeto.</p>
             <div class="empresa">
                 <span class="empresa-ano">2045</span>
                 <h3 class="empresa-titulo">bickcraft</h3>
@@ -76,9 +76,9 @@
 
 
     </section>
-    <section class="formação" id="formação">
+    <section class="container formação" id="formação">
         <div>
-            <h2 class="subtitulo-formação">formação</h2>
+            <h2 class="subtitulo">formação</h2>
         </div>
         <div class="formação-right">
           <p class="formação-info">Atualmente cursando o 3º periodo em Analise e desenvolvimento de sistemas (ADS) - Unipê. 
@@ -130,7 +130,7 @@
         </ul>
     </section>
     <footer>
-        <p>Lenilson Lira</p>
+        <p><a href="#header">Lenilson Lira</a></p>
     </footer>
     
 </body>

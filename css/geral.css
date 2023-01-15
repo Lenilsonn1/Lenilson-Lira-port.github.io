@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #141414;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    max-width: 1300px;
+    padding: 40px 20px;
+    margin: 2rem;
+}
+.subtitulo{
+    font-size: 8rem;
+    text-transform: uppercase;
+    line-height: 1;
+    word-break: break-all;
+    max-width: 4ch;
+}

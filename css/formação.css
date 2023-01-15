@@ -192,9 +192,21 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .cursos-intensivos h1{
+        position: relative;
+    }
+    .cursos-intensivos::before{
+        content: '';
+        width: 25px;
+        height: 25px;
+        background: url(https://www.origamid.com/projetos/portfolio/img/cursos.svg);
 
+    }
+    .idiomas::before{
+        content: '';
+        width: 25px;
+        height: 25px;
+        background: url(https://www.origamid.com/projetos/portfolio/img/idiomas.svg);
 
-    .idiomas, .cursos-in{
-        padding: 10px 20px;
     }
 }
